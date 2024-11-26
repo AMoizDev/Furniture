@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Furniture House</title>
+    <style>
+        body {
+            background-color: #a5a4a291;
+        }
+
+        /* navbar */
+        .nav-link :hover {
+            color: green;
+
+        }
+
+        .card img {
+            box-shadow: 0 0 2px currentColor;
+            color: black;
+            transition: all 1s ease 0s;
+        }
+
+        .card img:hover {
+            transform: scale(1.0);
+            text-shadow: 0 0 10px currentColor;
+            color: white;
+            opacity: 0.7;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav style="background-color: rgba(128, 128, 128, 0.308);" class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a style="color:green;" class="navbar-brand" href="./index.html">
+                <h2 style="color: black; font-family: 'Anton', sans-serif;">Furniture <span style="color: green;">
+                        House</span></h2>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="margin-left: 150px; " class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item  mx-2">
+                        <a class="nav-link active text-dark " aria-current="page" href="./index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark mx-2" aria-current="page" href="./New Arrival.html"><b>New Arrival</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark mx-2" aria-current="page" href="./about.html"><b>About</b>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark mx-2" aria-current="page"
+                            href="./contact3.html"><b>Contact</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark mx-2" aria-current="page" href="./Team.html"><b>Our Team</b></a>
+                    </li>
+                </ul>
+                <!-- search -->
+                <form class="d-flex">
+                    <input style="border-radius: 18px 0px 0px 18px;" class="form-control " type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button style="border-radius: 0px 18px 18px 0px ;" class="btn btn-success"
+                        type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cards title -->
+    <div class="container my-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img style="height: 400px;  border-radius:15px; " src="./shop now img/title/8..jpg"
+                        class="d-block w-100" alt="">
+                    <div class="card-img-overlay">
+                        <h2 style="color: black;">Interior <span style="color: green;"> Design</span></h2>
+                        <p style=" font-size: 20px;">When asked about the future of furniture in 2024.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height: 400px; border-radius:15px;" src="./shop now img/title/4..jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="card-img-overlay">
+                        <h2 style="color: black;">Interior <span style="color: green;"> Design</span></h2>
+                        <p style=" font-size: 20px;">When asked about the future of furniture in 2024.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="height:400px; border-radius:15px; " src="./shop now img/title/6..jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="card-img-overlay">
+                        <h2 style="color: black;">Interior <span style="color: green;"> Design</span></h2>
+                        <p style=" font-size: 20px;">When asked about the future of furniture in 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- part 1 -->
+
+    <!-- cards 1  -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: black;">Tables<span style="color: green;"> Set</span></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;;" src="./shop now img/table 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Table</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$53.76</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal1Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 1 -->
+            <div class="modal fade" id="modal1Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                   <img src="./shop now img/table 1.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$53.76</h4>
+                                    <h4>Coffee Table</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- card 2 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/table 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Elegant Center Table</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$55.98</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal2Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  modal 2 -->
+            <div class="modal fade" id="modal2Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="shop now img/table 2.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$55.98</h4>
+                                    <h4>Elegant Center Table</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/table 3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Center Tables </h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional.
+                           </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$45.26</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal3Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 3 -->
+    <div class="modal fade" id="modal3Id">
+        <div class="modal-dialog bg-success">
+            <div style="background-color: whitesmoke;" class="modal-content ">
+                <div class="modal-header pb-1">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="./shop now img/table 3.jpg" width="200px" height="250px" class="rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-name">$45.26</h4>
+                            <h4>Modern Center Tables</h4>
+                            <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                </b>
+                            </p>
+                            <h4 class="product-Price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Part 2 -->
+    <!-- cards 4  -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: black;">Sofa<span style="color: green;"> Set</span></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/sofa 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Sofa Isolated</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural.
+                          </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$145.99</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal4Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 4 -->
+            <div class="modal fade" id="modal4Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/sofa 1.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$145.99</h4>
+                                    <h4>Modern Sofa Isolated</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- card 5 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/sofa 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Stunning Sofa</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional.
+                           </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$125.99</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal5Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  modal 5 -->
+            <div class="modal fade" id="modal5Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/sofa 2.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$125.99</h4>
+                                    <h4>Stunning Sofa</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/sofa 3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Room Sofa Set Modern</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in.
+                            </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$135.99</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal6Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 6 -->
+    <div class="modal fade" id="modal6Id">
+        <div class="modal-dialog bg-success">
+            <div style="background-color: whitesmoke;" class="modal-content ">
+                <div class="modal-header pb-1">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="./shop now img/sofa 3.jpeg" width="200px" height="250px" class="rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-name">$135.99</h4>
+                            <h4>Room Sofa Set Modern</h4>
+                            <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                </b>
+                            </p>
+                            <h4 class="product-Price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- part 3 -->
+    <!-- cards 7  -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: black;">Wall <span style="color: green;"> Shelve</span></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/art 1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Wall Shelve</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in.
+                    </div>
+                    <div class="card-footer">
+                        <h4>$45.93</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal7Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 7 -->
+            <div class="modal fade" id="modal7Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/art 1.jpeg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$45.93</h4>
+                                    <h4>Beautiful Wall Shelve</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- card 8 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/art 3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wall Shelve Design Idea</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural.
+                            </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$85.35</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal8Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  modal 8 -->
+            <div class="modal fade" id="modal8Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/art 3.jpeg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$85.35</h4>
+                                    <h4> Wall Shelve Design Idea</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/art 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wall Shelf Designs</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional.
+                            </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$57.89</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal9Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 9 -->
+    <div class="modal fade" id="modal9Id">
+        <div class="modal-dialog bg-success">
+            <div style="background-color: whitesmoke;" class="modal-content ">
+                <div class="modal-header pb-1">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="./shop now img/art 2.jpg" width="200px" height="250px" class="rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-name">$57.89</h4>
+                            <h4>Wall Shelf Designs</h4>
+                            <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                </b>
+                            </p>
+                            <h4 class="product-Price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- part 4 -->
+
+    <!-- cards 10 -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: black;">Lamp<span style="color: green;"> Light</span></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/lamp 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lyse Decor Gold Modern Dual Globe Wall Lamp Light</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural.
+                           </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$48.00</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal10Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 10 -->
+            <div class="modal fade" id="modal10Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/lamp 1.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$48.00</h4>
+                                    <h4>Lyse Decor Gold Modern Dual Globe Wall Lamp Light</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- card 11 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/lamp 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wall Lamps Kitchen Home Bunk Bed Lights Wireless Lamp</h5>
+                        <p class="card-text">This is a longer card with supporting.
+                            </p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$45.00</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal11Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  modal 11 -->
+            <div class="modal fade" id="modal11Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/lamp 2.jpg" width="200px" height="250px" class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$45.00</h4>
+                                    <h4>Wall Lamps Kitchen Home Bunk Bed Lights Wireless Lamp</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 12 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/lamp 3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokhdye Light Luxury Long Arm Wrought Iron Wall Lamp</h5>
+                        <p class="card-text">This is a longer card with supporting.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$45.00</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal12Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 12 -->
+    <div class="modal fade" id="modal12Id">
+        <div class="modal-dialog bg-success">
+            <div style="background-color: whitesmoke;" class="modal-content ">
+                <div class="modal-header pb-1">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="./shop now img/lamp 3.jpg" width="200px" height="250px" class="rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-name">100$</h4>
+                            <h4>Pokhdye Light Luxury Long Arm Wrought Iron Wall Lamp</h4>
+                            <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                </b>
+                            </p>
+                            <h4 class="product-Price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- part 5 -->
+    <!-- cards 13  -->
+    <div class="container">
+        <h2 class="text-center my-4" style="color: black;">Wooden <span style="color: green;"> Cupboard</span></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/cupboard 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Wooden Cupboard Design Ideas</h5>
+                        <p class="card-text">This is a longer card with supporting.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$400.00</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal13Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 13 -->
+            <div class="modal fade" id="modal13Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src=" ./shop now img/cupboard 1.jpg" width="200px" height="250px"
+                                        class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="product-name">$400.00</h4>
+                                    <h4>Modern Wooden Cupboard Design Ideas</h4>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- card 14 -->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/cupboard 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cupboard Wardrobe Design for Bedroom</h5>
+                        <p class="card-text">This is a longer card with supporting.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$335.87</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal14Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  modal 14 -->
+            <div class="modal fade" id="modal14Id">
+                <div class="modal-dialog bg-success">
+                    <div style="background-color: whitesmoke;" class="modal-content ">
+                        <div class="modal-header pb-1">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mt-2 p-3">
+                                <div class="col-md-6">
+                                    <img src="./shop now img/cupboard 2.jpg" width="200px" height="250px"
+                                        class="rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="product-name">$335.87</h2>
+                                    <h3>Cupboard Wardrobe Design for Bedroom</h3>
+                                    <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                            <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                        </b>
+                                    </p>
+                                    <h4 class="product-Price"></h4>
+                                    <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 15-->
+            <div class="col">
+                <div style="background-color: whitesmoke;" class="card">
+                    <img style="height: 270px;" src="./shop now img/cupboard 3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Designer Wardrobe Design for Bedroom</h5>
+                        <p class="card-text">This is a longer card with supporting.</p>
+                    </div>
+                    <div class="card-footer">
+                        <h4>$387.99</h4>
+                        <a class="btn btn-success card-link" data-bs-toggle="modal" data-bs-target="#modal15Id"
+                            href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 15 -->
+    <div class="modal fade" id="modal15Id">
+        <div class="modal-dialog bg-success">
+            <div style="background-color: whitesmoke;" class="modal-content ">
+                <div class="modal-header pb-1">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-cart-shopping"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="./shop now img/cupboard 3.jpg" width="200px" height="250px" class="rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="product-name">$387.99</h4>
+                            <h4>Designer Wardrobe Design for Bedroom</h4>
+                            <p style="box-sizing: border-box;" class="product-desc">ipsum dolor sit amet
+                                consectetur adipisicing elit.</p>
+                            <p> <b>Review : &nbsp;&nbsp;&nbsp;
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star"></i>
+                                    <i style="color: yellow;" class="fa-solid fa-star-half-stroke"></i>
+                                </b>
+                            </p>
+                            <h4 class="product-Price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <h2 style="margin-left:40px; color:black; font-family: 'Anton', sans-serif;">Furniture <span
+                        style="color: green;"> House</span></h2>
+            </a>
+            <span class="text-muted">© 2023</span>
+        </div>
+
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">online cards</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">return policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">privacy policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">shipping</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">inventory</a></li>
+        </ul>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"> <i class="fa-brands fa-facebook p-2"
+                        aria-hidden="true"></i> Facebook</a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"> <i
+                        class="fa-brands fa-instagram p-2" aria-hidden="true"></i> Instagram</a></li>
+
+        </ul>
+    </footer>
+
+
+
+    <script src="./jquery-3.7.1.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

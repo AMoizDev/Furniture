@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Furniture House</title>
+
+  <style>
+     body {
+      background-color: #a5a4a291;
+    }
+
+    /* navbar */
+    .nav-link :hover {
+      color: green;
+
+    
+    }
+    .error{
+            color: red;
+        }
+  </style>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav style="background-color: rgba(128, 128, 128, 0.308);" class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a style="color:green;" class="navbar-brand" href="./index.html">
+        <h2 style="color: black;  font-family: 'Anton', sans-serif;">Furniture <span style="color: green;"> House</span></h2>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul style="margin-left: 150px; " class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item  mx-2">
+            <a class="nav-link active text-dark " aria-current="page" href="./index.html"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark mx-2" aria-current="page" href="./New Arrival.html"><b>New Arrival</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active text-dark mx-2" aria-current="page" href="./about.html"><b>About</b> </a>
+          </li>
+          <li class="nav-item">
+
+          <li class="nav-item">
+            <a class="nav-link active text-dark mx-2" aria-current="page" href="./index.html"><b>Contact</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark mx-2" aria-current="page" href="./Team.html"><b>Our Team</b></a>
+          </li>
+        </ul>
+        <!-- search -->
+        <form class="d-flex">
+          <input style="border-radius: 18px 0px 0px 18px;" class="form-control " type="search" placeholder="Search"
+            aria-label="Search">
+          <button style="border-radius: 0px 18px 18px 0px ;" class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- contact -->
+  <div class="container my-5">
+    
+    <h2 class="text-center" style="color: green;"> <b> <span style="color: black;">Contact</span>  Us </b></h2>
+  <form id="myform">
+    <div class="mb-3 my-4">
+      <label style="color: rgb(0, 0, 0);" for="name" class="form-label"><b>Name</b></label>
+      <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Your Name">
+    </div>
+    <div class="mb-3">
+      <label style="color: rgb(0, 0, 0);" for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+      <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+      <div style="color: black;" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+      <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
+
+<script src="./js/jquery-3.7.1.min.js"></script>
+
+ <!-- Jquery validation cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+      <script>
+        jQuery("#myform").validate({
+          rules : {
+            name : {
+              required : true,
+              minlength : 3,
+            },
+            email : {
+              required : true,
+              email : true,
+            },
+            message : {
+              required : true,
+              minlength : 15,
+            }
+      
+          },
+          messages : {
+            name : {
+              required : "Name Must Be Required",
+              minlength : "Name Must Be Greater Than 3 Characters"
+            },
+            email : {
+              required : "Email Must Be Required",
+              email : "Please Enter A Valide Email",
+          },
+          message : {
+            required : "Message Must Be Required",
+            minlength : "Message Must Be Greater Than 15 Characters"
+        },
+      
+          }
+        })
+      </script>
+
+<!-- Footer -->
+
+ <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <h2 style="margin-left:40px; color:black;  font-family: 'Anton', sans-serif;">Furniture <span style="color: green;">House</span></h2>
+    </a>
+    <span class="text-muted">© 2023</span>
+  </div>
+
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">online cards</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">return policy</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">privacy policy</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">shipping</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">inventory</a></li>
+  </ul>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"> <i
+      class="fa-brands fa-facebook p-2" aria-hidden="true"></i> Facebook</a></li>
+    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"> <i
+      class="fa-brands fa-instagram p-2" aria-hidden="true"></i> Instagram</a></li>
+   
+  </ul>
+</footer> 
+
+</body>
+
+</html>
